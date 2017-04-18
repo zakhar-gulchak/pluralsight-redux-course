@@ -1,11 +1,12 @@
 // This component handles the App template used on every page.
 import React, {PropTypes} from 'react';
+import HeaderComponent from './common/headerComponent';
 
 class App extends React.Component {
     render() {
         return (
             <div className="container-fluid">
-                <p>Header here...</p>
+                <HeaderComponent />
                 {this.props.children}
             </div>
         );
